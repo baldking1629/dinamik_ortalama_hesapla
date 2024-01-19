@@ -19,7 +19,7 @@ class OrtalamaGoster extends StatelessWidget {
           style: Sabitler.ortalamaGosterBodyStyle,
         ),
         Text(
-          ortalama.toStringAsFixed(2),
+          ortalama > 0 ? ortalama.toStringAsFixed(2) : '0.00',
           style: Sabitler.ortalamaStyle,
         ),
         Text(
